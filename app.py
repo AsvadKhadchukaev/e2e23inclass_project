@@ -16,10 +16,10 @@ def predict():
     args = request.args
     open_plan = args.get('open_plan', default=-1, type=int)
     rooms = args.get('rooms', default=-1, type=int)
-    area = args.get('area', default=-1, type=float)
+    living_area = args.get('living_area', default=-1, type=float)
     renovation = args.get('renovation', default=-1, type=int)
 
-    x = numpy.array([open_plan, rooms, area, renovation]).reshape(1,-1)
+    x = numpy.array([open_plan, rooms, living_area, renovation]).reshape(1,-1)
     x = sc_x.transform(x)
     result = model.predict(x)
     result = sc_y.inverse_transform(result.reshape(1,-1))
