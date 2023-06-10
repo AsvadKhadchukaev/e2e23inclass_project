@@ -16,6 +16,7 @@ To clean and preprocess the data, the following steps were performed:
 2. Feature engineering: Extracting relevant features from the data and transforming them as needed.
 3. Feature scaling: Applying scaling techniques to ensure all features are on a similar scale.
 
+The machine learning model used in this project is based on the Random Forest framework.
 
 ## Installation and Running the App
 
