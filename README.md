@@ -53,7 +53,7 @@ To install and run the Flask application locally, please follow these instructio
 
 The project includes a Dockerfile to facilitate containerization of the application. The Dockerfile contains the necessary instructions to build a Docker image for the Flask application.
 
-```
+
 
 The Dockerfile specifies a base image with Python 3.8, sets the working directory to `/app`, copies the project files into the container, installs the dependencies from `requirements.txt`, exposes port 5000 for the Flask application, and sets the command to run `app.py`.
 
@@ -77,7 +77,7 @@ To run the Flask application using Docker, follow these steps:
 2. Create and run a Docker container:
 
    ```bash
-   docker run --network host -it asvad/e2e23_price_predictor:v.0.1
+   docker run --network host -d asvad/e2e23_price_predictor:v.0.1
    ```
 
    The `--network host` flag allows the container to access the host's network, which is required to access the Flask application running inside the container.
