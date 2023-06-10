@@ -25,8 +25,7 @@ To install and run the Flask application locally, please follow these instructio
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/AsvadKhadchukaev/e2e23inclass_project.git
    ```
 
 2. Set up a virtual environment (optional but recommended):
@@ -64,7 +63,6 @@ To open the port on a remote VM, follow these general steps:
 
 1. Access your remote VM using SSH or any other remote access method.
 2. Configure the firewall settings to allow incoming connections on port 5444.
-3. If using a cloud service provider, check their specific documentation on how to configure network settings and open ports.
 
 ## Running the App Using Docker
 
